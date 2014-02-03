@@ -1,0 +1,7 @@
+@include sticky-footer($height-footer, '#l-footer-wrapper', '#l-footer-push', '#l-footer');
+
+#l-footer {
+  height: $height-footer;
+  min-height: $height-footer;
+  margin: 0;
+}

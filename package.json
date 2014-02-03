@@ -1,0 +1,40 @@
+{
+  "name": "my-app",
+  "version": "0.0.0",
+  "dependencies": {
+    "express": "latest",
+    "request": "latest",
+    "underscore": "latest",
+    "q": "latest",
+    "hogan.js": "latest",
+    "hjs": "latest",
+    "logmagic": "latest",
+    "http-proxy": "latest",
+    "config": "~0.4.35"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-compass": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-htmlmin": "latest",
+    "grunt-contrib-watch": "latest",
+    "matchdep": "latest",
+    "grunt-usemin": "latest",
+    "grunt-karma": "latest",
+    "grunt-ngmin": "latest",
+    "grunt-exec": "latest",
+    "grunt-html2js": "latest",
+    "grunt-bg-shell": "latest",
+    "jasmine-node": "latest",
+    "supertest": "latest",
+    "karma-html2js-preprocessor": "~0.1.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

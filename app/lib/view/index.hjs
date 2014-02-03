@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" ng-app="app" ng-controller="RootCtrl">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{title}}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- let google know this uses html5 push state -->
+    <meta name="fragment" content="!" />
+    <!-- build:css(app) deps.css -->
+    <link rel="stylesheet" href="/bower-components/bootstrap-sass/dist/css/bootstrap.min.css">
+    <!-- endbuild -->
+    <!-- build:css(app/public) main.css -->
+    <link rel="stylesheet" href="/style/main.css">
+    <!-- endbuild -->
+    <!-- build:css(app/public) images.css -->
+    <link rel="stylesheet" href="/style/images.css">
+    <!-- endbuild -->
+
+    <!-- optionally load deps from their respective CDNs -->
+    <!--<script src="//code.jquery.com/jquery-2.1.0.min.js"></script>-->
+    <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">-->
+    <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>-->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>-->
+  </head>
+
+  <body>
+
+    <div id="l-footer-wrapper">
+      <div class="l-top-nav" ng-include="'/module/nav/nav.html'"></div>
+      <div id="l-view-container" class="container" ng-view></div>
+      <div id="l-footer-push"></div>
+    </div>
+    <div id="l-footer" ng-include="'/module/footer/footer.html'"></div>
+
+
+    <!-- build:js(app) deps.js -->
+    <script src="/bower-components/angular/angular.min.js"></script>
+    <script src="/bower-components/angular-route/angular-route.min.js"></script>
+    <script src="/bower-components/angular-resource/angular-resource.min.js"></script>
+    <script src="/bower-components/angular-cache/dist/angular-cache.min.js"></script>
+    <script src="/bower-components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="/bower-components/underscore/underscore-min.js"></script>
+    <script src="/bower-components/underscore.string/dist/underscore.string.min.js"></script>
+    <script src="/bower-components/jquery/jquery.min.js"></script>
+    <script src="/bower-components/d3/d3.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js(app/public) scripts.js -->
+    <script src="/shims.js"></script>
+    <script src="/views.js"></script>
+    <script src="/app.js"></script>
+    <script src="/module/root.js"></script>
+    <script src="/module/home/home.js"></script>
+    <script src="/module/about/controller.js"></script>
+    <script src="/directive/nav-link.js"></script>
+    <!-- endbuild -->
+
+    <!-- these scripts are only loaded in dev mode, and removed for release builds -->
+    <!-- build:remove -->
+    <script src="//localhost:35729/livereload.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>

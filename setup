@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "installing global node modules..."
+sudo npm install -g jshint bower grunt-cli
+
+echo "installing ruby gems for compass/sass..."
+sudo bundle
+
+echo "installing local node modules..."
+npm install
+
+echo "installing bower client modules..."
+bower install
+
+echo "done"
